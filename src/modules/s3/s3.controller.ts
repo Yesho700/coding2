@@ -10,12 +10,14 @@ import {
   ApiConsumes,
   ApiBody,
   ApiParam,
+  ApiBearerAuth,
 } from '@nestjs/swagger';
 import { AuthGuard } from 'src/guards/auth.guard';
 
 @ApiTags('S3 Operations')
 
 @UseGuards(AuthGuard)
+@ApiBearerAuth('JWT')
 @Controller('s3')
 export class S3Controller {
   constructor(private readonly s3Service: S3Service) {}
