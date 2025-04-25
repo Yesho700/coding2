@@ -96,3 +96,31 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+## Docker 
+
+To Run the Redis in Docker 
+
+RUN -> docker compose up -d
+
+## Environment Variables 
+
+PORT
+
+MONGO_URI 
+
+JWT_SECRET
+JWT_EXPIRESIN
+
+USER_EMAIL
+USER_PASSWORD
+SERVICE
+
+REDIS_HOST
+REDIS_PORT
+
+AWS_REGION
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_BUCKET_NAME
